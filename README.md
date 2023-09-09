@@ -1,4 +1,5 @@
 # 1 - Объявление переменных и получение элементов DOM:
+
 const getFromValue = document.getElementById("get-from-value");
 const addPercent = document.getElementById("add-percent");
 const showResult = document.getElementById("show-result"); 
@@ -6,6 +7,7 @@ const pushBtn = document.getElementById("push-btn");
 const resetBtn = document.getElementById("reset-btn");
 const resultContainer = document.getElementById("result-container");
 const showCycleCount = document.getElementById("show-cycle-count");
+
 
 В этом блоке кода мы объявляем переменные для всех элементов DOM (HTML-элементов), с которыми мы будем взаимодействовать в коде. Мы их получаем по их id, которые соответствуют id элементов в HTML разметке.
 
@@ -17,6 +19,7 @@ let resultCount = 0;
 Здесь мы объявляем две переменные: resultValue, которая будет хранить текущее значение результата, и resultCount, которая будет отслеживать количество выполненных итераций (расчетов).
 
 # 3 - Функция updateResult():
+
 function updateResult() {
     const resultElement = document.createElement("p");
     resultElement.textContent = `Результат ${resultCount + 1}: ${resultValue.toFixed(2)}`;
@@ -58,7 +61,7 @@ pushBtn.addEventListener("click", () => {
     }
 });
 
-Этот обработчик события срабатывает при нажатии на кнопку "Выполнить увеличение". Внутри обработчика:
+# Этот обработчик события срабатывает при нажатии на кнопку "Выполнить увеличение". Внутри обработчика:
 
 Получаем начальное значение и процент увеличения из полей ввода.
 Проверяем, что введенные значения являются числами.
