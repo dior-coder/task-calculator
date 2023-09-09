@@ -18,7 +18,7 @@ function updateResult() {
     showResult.value = resultValue.toFixed(2);
 
     showCycleCount++;
-    showCycleCountElement.textContent = `Количество выполнился: ${showCycleCount} цикл`;
+    showCycleCountElement.textContent = `Количество выполнился: ${showCycleCount}`;
 }
 
 pushBtn.addEventListener("click", () => {
@@ -52,5 +52,5 @@ resetBtn.addEventListener("click", () => {
     resultCount = 0;
     pushBtn.disabled = false;
     showCycleCount = 0; 
-    showCycleCountElement.textContent = "После сброса осталось 0 цикл";
+    showCycleCountElement.textContent = "После сброса осталось 0";
 });
